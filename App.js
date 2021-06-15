@@ -11,6 +11,7 @@ export default function App() {
         title='Model S'
         subtitle='Starting at $69,420'
       />
+
       <StatusBar style='auto' />
     </View>
   );

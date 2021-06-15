@@ -1,9 +1,8 @@
-// Import Dependencies
 import React from 'react';
 import { ImageBackground, Text, View } from 'react-native';
 import styles from './styles';
+import StyledButton from '../StyledButton';
 
-// Create component
 const CarItem = ({ image, title, subtitle }) => {
   return (
     <View style={styles.carContainer}>
@@ -15,9 +14,23 @@ const CarItem = ({ image, title, subtitle }) => {
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.subtitle}>{subtitle}</Text>
       </View>
+
+      <StyledButton
+        type='primary'
+        content='Custom Order'
+        onPress={() => {
+          console.log('Custom Order Completed');
+        }}
+      />
+      <StyledButton
+        type='secondary'
+        content='Existing Inventory'
+        onPress={() => {
+          console.log('Loading Existing Inventory');
+        }}
+      />
     </View>
   );
 };
 
-// Export Component
 export default CarItem;
