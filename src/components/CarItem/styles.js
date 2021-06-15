@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -7,14 +7,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  buttonContainer: {
-    position: 'absolute',
-    bottom: 50,
-    width: '100%',
-  },
   carContainer: {
     width: '100%',
-    height: '100%',
+    height: Dimensions.get('screen').height,
   },
   carImage: {
     width: '100%',
@@ -26,15 +21,15 @@ const styles = StyleSheet.create({
     marginTop: '30%',
     alignItems: 'center',
   },
-  title: {
+  name: {
     fontSize: 40,
     fontWeight: '500',
   },
-  subtitle: {
+  tagline: {
     fontSize: 16,
     color: '#5c5e62',
   },
-  subtitleCTA: {
+  taglineCTA: {
     fontSize: 16,
     color: '#5c5e62',
     textDecorationLine: 'underline',
