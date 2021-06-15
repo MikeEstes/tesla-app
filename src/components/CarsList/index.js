@@ -9,13 +9,14 @@ const CarsList = () => {
     <View style={styles.container}>
       <FlatList
         data={cars}
-        renderItem={({ item }) => {
-          return <CarItem car={item} />;
-        }}
+        keyExtractor={(item) => item.name}
         snapToAlignment={'start'}
         decelerationRate={'fast'}
         snapToInterval={Dimensions.get('screen').height}
         showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => {
+          return <CarItem car={item} />;
+        }}
       />
     </View>
   );
