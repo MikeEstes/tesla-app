@@ -7,9 +7,27 @@ export default function App() {
   return (
     <View style={styles.container}>
       <CarItem
-        image='../../../assets/images/ModelS.jpeg'
         title='Model S'
         subtitle='Starting at $69,420'
+        image={require('./assets/images/ModelS.jpeg')}
+      />
+      <CarItem
+        title='Model 3'
+        subtitle='Order Online for '
+        subtitleCTA='Touchless Delivery'
+        image={require('./assets/images/Model3.jpeg')}
+      />
+      <CarItem
+        title='Model X'
+        subtitle='Order Online for '
+        subtitleCTA='Touchless Delivery'
+        image={require('./assets/images/ModelX.jpeg')}
+      />
+      <CarItem
+        title='Model Y'
+        subtitle='Order Online for '
+        subtitleCTA='Touchless Delivery'
+        image={require('./assets/images/ModelY.jpeg')}
       />
 
       <StatusBar style='auto' />
